@@ -1,0 +1,25 @@
+---
+title: "Test"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Test}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(TestVignette)
+```
+
+```{r}
+plot(1:10, 1:10)
+```
+
+<img src="../man/figures/kwindow.png" width="50%">
